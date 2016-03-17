@@ -1,0 +1,4 @@
+RouteTableName,Location,RouteTableLabel,RouteName,AddressPrefix,NextHopType,NextHopIpAddress,VirtualNetworkName,SubnetName
+BogusRouteTable2,East Us,Custom Route table,AzureUsEast-1,23.96.0.0/18,Internet,,,
+BogusRouteTable2,East Us,Custom Route table,AzureUsEast-2,23.96.64.0/28,Internet,,,
+BogusRouteTable2,East Us,Custom Route table,AzureUsEast-3,8.8.8.8/32,VirtualAppliance,10.200.201.10,DefaultVirtualNetwork,Subnet-1
