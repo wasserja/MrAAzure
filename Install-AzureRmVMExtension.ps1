@@ -96,7 +96,11 @@ function Install-AzureRmVMExtension
                     }
 
                 foreach ($Extension in $Extensions) {
-                    Set-AzureRmVMExtension -ExtensionName $Extension.Type -Publisher $Extension.PublisherName -ExtensionType $Extension.Type -Version $Extension.Version -Location $Location -ResourceGroupName $ResourceGroupName -VMName $VM 
+                    
+                    [version]$Version = $Extension.Version
+                    $VersionMajorMinor = $Version.Major.tostring() + '.' + $Version.Minor.tostring()
+                    Set-AzureRmVMExtension -ExtensionName $Extension.Type -Publisher $Extension.PublisherName -ExtensionType $Extension.Type -TypeHandlerVersion $VersionMajorMinor -Location $Location -ResourceGroupName $ResourceGroupName -VMName $VM -ErrorAction Stop
+                    
                     }
                 }
             }
