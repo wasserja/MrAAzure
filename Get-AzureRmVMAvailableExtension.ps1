@@ -8,6 +8,10 @@
    The Get-AzureVMAvailableExtension has not yet been ported
    to the new ARM PowerShell module. Use this function as a
    replacement.
+
+   Requires Read RBAC role on subscription to be able to 
+   get the list of available publishers.
+
 .NOTES
    Created by: Jason Wasser @wasserja
    Modified: 3/15/2016 02:10:17 PM 
