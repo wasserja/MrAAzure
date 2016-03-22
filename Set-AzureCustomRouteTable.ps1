@@ -201,7 +201,7 @@ function Set-AzureCustomRouteTable
                     $Location = Read-Host -Prompt 'Location'
                     }
                 if (!$RouteTableLabel) {
-                    $RouteTableLabel = Read-Host -Prompt 'RouteTableLable'
+                    $RouteTableLabel = Read-Host -Prompt 'RouteTableLabel'
                     }
                 $RouteTable = New-AzureRouteTable -Name $RouteTableName -Location $Location -Label $RouteTableLabel
                 Write-Output $RouteTable
