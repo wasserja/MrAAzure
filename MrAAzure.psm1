@@ -26,3 +26,4 @@ Export-ModuleMember -Function Copy-AzureBlob
 Export-ModuleMember -Function Copy-AzureItem
 Export-ModuleMember -Function Install-AzureRmVMTrendMicroDeepSecurityExtension
 Export-ModuleMember -Function Test-AzureRmLogin
+Export-ModuleMember -Function Get-AzurePublicIPList
