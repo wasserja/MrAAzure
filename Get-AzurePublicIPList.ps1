@@ -9,8 +9,10 @@
    addresses and subnets for each region selected.
 .NOTES
    Created by: Jason Wasser @wasserja
-   Modified: 2/17/2016 02:32:13 PM 
-   Version: 0.999
+   Modified: 9/9/2016 08:50:05 AM 
+   Version: 0.9999
+   Changelog
+    * set Region default parameter to * so that first run actually produces output.
 .PARAMETER Region
    Enter the Azure region by name. Use the ListRegions switch to get 
    a list of available regions by name.
@@ -77,7 +79,7 @@ function Get-AzurePublicIpList
         [Parameter(Mandatory=$false,
                    ValueFromPipelineByPropertyName=$true,
                    Position=0)]
-        [string]$Region,
+        [string]$Region='*',
         [string]$XmlFilePath = 'C:\Temp\AzurePublicIpList.xml',
         [string]$DownloadUrl = 'https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653',
         [switch]$ListRegions

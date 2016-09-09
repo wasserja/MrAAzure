@@ -5,8 +5,7 @@
 		This function simplifies the process of uploading files to an Azure storage account. In order for this function to work you
 		must have already logged into your Azure subscription with Login-AzureAccount. The file uploaded will be called the file
 		name as the storage blob.
-	.NOTES
-        By: Adam Bertram @adbertram	
+		
 	.PARAMETER FilePath
 		The local path of the file(s) you'd like to upload to an Azure storage account container.
 	
@@ -26,8 +25,6 @@
 	
 	.PARAMETER StorageAccountName
 		The name of the storage account the container that will hold the file is in.
-    .LINK
-        https://github.com/adbertram/Random-PowerShell-Work/blob/master/Azure/Copy-AzureItem.ps1
 	#>
 	[CmdletBinding()]
 	param
