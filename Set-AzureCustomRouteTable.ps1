@@ -51,7 +51,7 @@
 .LINK
    https://gallery.technet.microsoft.com/scriptcenter/Set-AzureCustomRouteTable-e8488a43
 #>
-#Requires -Modules AzureRM
+#Requires -Modules Azure,AzureRM
 function Set-AzureCustomRouteTable
 {
     [CmdletBinding()]
