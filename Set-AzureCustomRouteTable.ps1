@@ -8,8 +8,8 @@
    subnet in an Azure virtual network.
 .NOTES
    Created by: Jason Wasser @wasserja
-   Modified: 2/15/2016 04:48:12 PM 
-   Version: 0.9
+   Modified: 10/15/2016 10:33:23 AM  
+   Version: 0.99
 .PARAMETER RouteTableName
    Enter a name for the route table to be created/modified.
 .PARAMETER Location
@@ -51,7 +51,7 @@
 .LINK
    https://gallery.technet.microsoft.com/scriptcenter/Set-AzureCustomRouteTable-e8488a43
 #>
-#Requires -Modules Azure
+#Requires -Modules AzureRM
 function Set-AzureCustomRouteTable
 {
     [CmdletBinding()]

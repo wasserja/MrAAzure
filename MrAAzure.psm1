@@ -15,15 +15,3 @@ Function Install-AzureRmVMTrendMicroDeepSecurityExtension {
 
     Install-AzureRmVMExtension -VMName $VMName -ResourceGroupName $ResourceGroupName -Location $Location -PublisherName $PublisherName -ExtensionName $ExtensionName
     }
-
-
-# Making Parent Functions Available to Module
-Export-ModuleMember -Function Install-AzureRmVMExtensionLegacy
-Export-ModuleMember -Function Get-AzureRmVMAvailableExtension
-Export-ModuleMember -Function Install-AzureRmVMExtension
-Export-ModuleMember -Function Set-AzureCustomRouteTable
-Export-ModuleMember -Function Copy-AzureBlob
-Export-ModuleMember -Function Copy-AzureItem
-Export-ModuleMember -Function Install-AzureRmVMTrendMicroDeepSecurityExtension
-Export-ModuleMember -Function Test-AzureRmLogin
-Export-ModuleMember -Function Get-AzurePublicIPList
